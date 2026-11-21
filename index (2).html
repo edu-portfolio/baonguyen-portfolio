@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Bao Nguyen · Global Portfolio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Nguyen Ngoc Bao Nguyen, HSSH Hanoi, Class of 2027. Aspiring International Business student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top"><i></i>Bao Nguyen</a>
+    <nav class="navlinks" aria-label="Sections">
+      <a href="#ventures">Ventures</a><a href="#chain">Impact</a><a href="#voyage">Journey</a><a href="#yard">Credentials</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="clocks" aria-label="World clocks">
+      <span class="z1">HAN<b data-tz="Asia/Ho_Chi_Minh">--:--</b></span>
+      <span class="z2">LDN<b data-tz="Europe/London">--:--</b></span>
+      <span class="z3">NYC<b data-tz="America/New_York">--:--</b></span>
+    </div>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <canvas id="globe" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div>
+      <span class="hero__eyebrow mono">International Business · Class of 2027</span>
+      <h1><span class="line"><span>Nguyen Ngoc</span></span><span class="line"><span>Bao Nguyen</span></span></h1>
+      <p class="hero__lead">A student from Hanoi who <b>runs teams, manages budgets</b> and <b>builds projects that cross borders</b>, from a national debate tournament to an olympiad in Indonesia.</p>
+      <div class="hero__cta">
+        <a class="btn btn--solid" href="#ventures">View my ventures →</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+
+    <article class="pass" aria-label="Profile summary styled as a boarding pass">
+      <div class="pass__main">
+        <div class="pass__top">
+          <span class="pass__airline"><i>✈</i>Boarding pass</span>
+          <span class="mono" style="color:var(--muted)">Class of 2027</span>
+        </div>
+        <div class="pass__route">
+          <div><b>HAN</b><small>Hanoi · HSSH</small></div>
+          <div class="pass__path"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z" transform="rotate(90 12 12)"/></svg></div>
+          <div style="text-align:right"><b>USA</b><small>Int’l Business</small></div>
+        </div>
+        <div class="pass__fields">
+          <div><span>Passenger</span><b>B. Nguyen</b></div>
+          <div><span>GPA · G11</span><b>9.6/10</b></div>
+          <div><span>IELTS</span><b>7.0</b></div>
+          <div><span>SAT</span><b>1430</b></div>
+          <div><span>Raised</span><b>$1,000+</b></div>
+          <div><span>Status</span><b style="color:var(--teal)">Ready</b></div>
+        </div>
+      </div>
+      <div class="pass__stub">
+        <img src="img/portrait.jpg" alt="Portrait of Nguyen Ngoc Bao Nguyen">
+        <div class="barcode" aria-hidden="true"></div>
+      </div>
+    </article>
+  </div>
+  <div class="scroll-hint mono" aria-hidden="true">Scroll<i></i></div>
+</section>
+
+<!-- DEPARTURES -->
+<section class="board-sec" aria-label="Track record">
+  <div class="wrap">
+    <div class="board" data-reveal>
+      <div class="board__head">
+        <span class="board__title"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.5 19h19v2h-19zM22.07 9.64c-.21-.8-1.04-1.28-1.84-1.06L14.92 10l-6.9-6.43-1.93.51 4.14 7.17-4.97 1.33-1.97-1.54-1.45.39 2.59 4.49L21 11.49c.81-.23 1.28-1.05 1.07-1.85z"/></svg>Departures</span>
+        <span class="mono" style="color:var(--on-dark-2)">Track record · 2023 – 2026</span>
+      </div>
+      <div class="row row--h"><span>Year</span><span>Destination</span><span>Cargo</span><span>Status</span></div>
+      <div class="row"><span class="flap">2026</span><span class="flap">Bandung · IAMO</span><span class="flap">Applied math</span><span class="st st--gold flap">Grand finalist</span></div>
+      <div class="row"><span class="flap">2026</span><span class="flap">Hanoi · NSDC</span><span class="flap">72 teams</span><span class="st flap">Completed</span></div>
+      <div class="row"><span class="flap">2025</span><span class="flap">Hanoi · VNU</span><span class="flap">Competition</span><span class="st st--gold flap">Honorable mention</span></div>
+      <div class="row"><span class="flap">2025</span><span class="flap">Lang Son · Ky Lua</span><span class="flap">1,000 gifts</span><span class="st flap">Delivered</span></div>
+      <div class="row"><span class="flap">2024</span><span class="flap">Hanoi · Ars Cartis</span><span class="flap">$1,000+</span><span class="st flap">Raised</span></div>
+      <div class="row"><span class="flap">2023</span><span class="flap">Hanoi · History</span><span class="flap">District</span><span class="st st--gold flap">Second prize</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission" id="mission">
+  <div class="wrap mission__grid">
+    <span class="mono mission__label">01 · Why International Business</span>
+    <div>
+      <p class="mission__text" id="words">Every project I lead has three sides: the <span class="hl">people</span>, the <span class="hl">money</span> and the <span class="hl">story</span>. Running clubs and events in Hanoi taught me how they connect. Now I want to learn how the same questions play out between companies and countries, and how business can grow across borders while it serves the communities it reaches.</p>
+      <div class="mission__sign"><b>Bảo Nguyên</b><span class="mono">HSSH · Hanoi</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- VENTURES -->
+<section class="sec" id="ventures" style="background:var(--paper);padding-top:20px">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div><span class="idx mono">02 · Portfolio</span><h2>Ventures I help run</h2></div>
+      <p>Three organizations, each with its own team, schedule and budget. I treat them like small companies.</p>
+    </div>
+    <div class="ventures">
+      <article class="v" data-reveal>
+        <div class="v__img"><img src="img/nsdc.jpg" alt="NSDC 2026 organizing team" loading="lazy"><span class="v__ticker">NSDC <em>▲ 72 teams</em></span></div>
+        <div class="v__body">
+          <span class="mono v__sector">Event operations · 2025 – now</span>
+          <h3>National Schools Debating Championship</h3>
+          <p class="v__role">Organizing Committee · Event Department</p>
+          <div class="kpis">
+            <div class="kpi"><b data-count="256">0</b><span>competitors &amp; judges</span></div>
+            <div class="kpi"><b data-count="100" data-suffix="+">0</b><span>matches</span></div>
+            <div class="kpi"><b data-count="3">0</b><span>days</span></div>
+          </div>
+          <ul>
+            <li>Coordinated registration and logistics for a national tournament.</li>
+            <li>Main point of contact for participants on rules and schedules.</li>
+            <li>Supervised a 10-member scoring team and 25-member floor team.</li>
+          </ul>
+          <div class="v__links"><a href="https://drive.google.com/drive/folders/1564tqo0RFA27vMtkPi3znmkjTKMk3e94?usp=drive_link" target="_blank" rel="noopener">Evidence →</a></div>
+        </div>
+      </article>
+      <article class="v" data-reveal style="transition-delay:.1s">
+        <div class="v__img"><img src="img/journalism.jpg" alt="Humans of HSSH team at a school event" loading="lazy"><span class="v__ticker">HOH <em>▲ weekly</em></span></div>
+        <div class="v__body">
+          <span class="mono v__sector">Media &amp; communications · 2025 – now</span>
+          <h3>Humans of HSSH</h3>
+          <p class="v__role">Vice President · Journalism Club</p>
+          <div class="kpis">
+            <div class="kpi"><b data-count="20" data-suffix="+">0</b><span>activities led</span></div>
+            <div class="kpi"><b data-count="100" data-suffix="+">0</b><span>students mentored</span></div>
+            <div class="kpi"><b>1/wk</b><span>content cycle</span></div>
+          </div>
+          <ul>
+            <li>Led Teacher’s Day, school anniversary and coming-of-age events.</li>
+            <li>Managed weekly content on student stories and campus life.</li>
+            <li>Coordinated communication across the executive board.</li>
+          </ul>
+          <div class="v__links">
+            <a href="https://www.facebook.com/share/19uk46ThCu/?mibextid=wwXIfr" target="_blank" rel="noopener">Fanpage →</a>
+            <a href="https://drive.google.com/drive/folders/1JvlvHbdgwK4Tr2Z-c7HSg-DwMkD_jBEz?usp=drive_link" target="_blank" rel="noopener">Evidence →</a>
+          </div>
+        </div>
+      </article>
+      <article class="v" data-reveal style="transition-delay:.2s">
+        <div class="v__img"><img src="img/basketball.jpg" alt="Nhan Van Basketball Club team on court" loading="lazy"><span class="v__ticker">NVB <em>▲ $200/mo</em></span></div>
+        <div class="v__body">
+          <span class="mono v__sector">Team &amp; budget management · 2025 – now</span>
+          <h3>Nhan Van Basketball Club</h3>
+          <p class="v__role">Deputy Head of Management Team</p>
+          <div class="kpis">
+            <div class="kpi"><b data-count="200" data-prefix="$">0</b><span>monthly budget</span></div>
+            <div class="kpi"><b data-count="25">0</b><span>players</span></div>
+            <div class="kpi"><b data-count="12" data-suffix="+">0</b><span>events</span></div>
+          </div>
+          <ul>
+            <li>Co-led a 12-member management team for training and tournaments.</li>
+            <li>Managed monthly membership fees and operating expenses.</li>
+            <li>Organized a sports fair, tournaments and club events.</li>
+          </ul>
+          <div class="v__links">
+            <a href="https://www.facebook.com/share/1Hru53Z18d/?mibextid=wwXIfr" target="_blank" rel="noopener">Fanpage →</a>
+            <a href="https://drive.google.com/drive/folders/1fm0mdVKOPn7eqF8-PFFAv356smqE0lTl?usp=drive_link" target="_blank" rel="noopener">Evidence →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE CHAIN -->
+<section class="sec dark" id="chain">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div><span class="idx mono">03 · Social enterprise</span><h2>A value chain for good</h2></div>
+      <p>The Ars Cartis, 2024 – now. A handmade-product fundraiser where I worked as a fundraising volunteer, from market research to impact.</p>
+    </div>
+    <div class="chain" id="chainEl">
+      <div class="chain__track"><div class="chain__fill"></div><div class="chain__box"></div></div>
+      <div class="node"><div class="node__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div><span class="mono">Research</span><b>Market</b><p>Studied which handmade products buyers want</p></div>
+      <div class="node"><div class="node__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></div><span class="mono">Production</span><b data-count="500" data-prefix="~">0</b><p>handmade items made with volunteers</p></div>
+      <div class="node"><div class="node__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16l-1.5 9h-13z"/><circle cx="9" cy="20" r="1.4"/><circle cx="16" cy="20" r="1.4"/><path d="M4 7 3 3H1"/></svg></div><span class="mono">Sales</span><b>Market day</b><p>products sold to the school community</p></div>
+      <div class="node"><div class="node__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><span class="mono">Revenue</span><b data-count="1000" data-prefix="$" data-suffix="+">0</b><p>raised for the cause</p></div>
+      <div class="node"><div class="node__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.4-9.3-9A5.3 5.3 0 0 1 12 6.6 5.3 5.3 0 0 1 21.3 12C19 16.6 12 21 12 21z"/></svg></div><span class="mono">Impact</span><b data-count="100" data-suffix="+">0</b><p>children supported, Club for Youth with Disabilities</p></div>
+    </div>
+    <div class="case-meta" data-reveal>
+      <span class="mono">Case · The Ars Cartis · Hanoi</span>
+      <a href="https://drive.google.com/file/d/1FQi8Qskn2AZbkF7FSmLgQLFrfGtZhatb/view?usp=drive_link" target="_blank" rel="noopener">Certificate →</a>
+    </div>
+    <div class="minis">
+      <article class="mini" data-reveal>
+        <span class="mono">2025 · Lạng Sơn</span>
+        <h3>Ky Lua Community Outreach</h3>
+        <p>Prepared and distributed 1,000 gifts and winter clothes to students in communities hit by natural disasters, and supported donations of educational equipment.</p>
+        <a href="https://drive.google.com/file/d/1Xp3bE8mfV4iQxL7yBxyjpvo2VCWZf26T/view?usp=drive_link" target="_blank" rel="noopener">Certificate →</a>
+      </article>
+      <article class="mini" data-reveal style="transition-delay:.1s">
+        <span class="mono">2024 · Hanoi</span>
+        <h3>Meals near K Hospital</h3>
+        <p>Distributed charity meals to patients and their families near K Hospital, Vietnam’s national cancer hospital.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VOYAGE LOG -->
+<section class="sec" id="voyage">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div><span class="idx mono">04 · Voyage log</span><h2>The journey so far</h2></div>
+      <p>Scroll to follow the route, port by port.</p>
+    </div>
+    <div class="voyage" id="voyageEl">
+      <div class="voyage__route"><div class="voyage__fill" id="vfill"></div></div>
+      <div class="ship" id="ship" aria-hidden="true">
+        <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="#061A2E"/><path d="M22 34 15 27V12a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v15z" fill="#FF6A2B"/><rect x="17.5" y="13" width="9" height="4" rx="1" fill="#FFC23A"/><rect x="17.5" y="18.5" width="9" height="4" rx="1" fill="#14A699"/><rect x="17.5" y="24" width="9" height="3" rx="1" fill="#2E5BF0"/></svg>
+      </div>
+      <div class="port">
+        <div class="port__yr">2023<small>Port · Le Loi JHS</small></div>
+        <ul>
+          <li><i>Award</i><span>Second Prize, District Excellent Student Competition in History</span></li>
+          <li><i>Academic</i><span>GPA 9.2/10 at Le Loi Junior High School</span></li>
+        </ul>
+      </div>
+      <div class="port">
+        <div class="port__yr">2024<small>Port · HSSH</small></div>
+        <ul>
+          <li><i>Enterprise</i><span>Joined The Ars Cartis as a fundraising volunteer</span></li>
+          <li><i>Learning</i><span>Started Finance Foundations self-study and economic writing</span></li>
+          <li><i>Service</i><span>Meal distribution near K Hospital, Hanoi</span></li>
+        </ul>
+      </div>
+      <div class="port">
+        <div class="port__yr">2025<small>Port · Leadership</small></div>
+        <ul>
+          <li><i>Leadership</i><span>Vice President, Humans of HSSH · Deputy Head, Nhan Van Basketball</span></li>
+          <li><i>Award</i><span>Honorable Mention, Vietnam National University, Hanoi Competition</span></li>
+          <li><i>Service</i><span>Ky Lua outreach in Lạng Sơn, 1,000 gifts</span></li>
+          <li><i>Academic</i><span>GPA 9.5/10, Grade 10</span></li>
+        </ul>
+      </div>
+      <div class="port">
+        <div class="port__yr">2026<small>Port · Bandung</small></div>
+        <ul>
+          <li><i>Award</i><span>Grand Finalist, International Applied Mathematics Olympiad, Bandung, Indonesia</span></li>
+          <li><i>Operations</i><span>NSDC 2026 organizing team, 72 teams over three days</span></li>
+          <li><i>Learning</i><span>Samsung Solve for Tomorrow online training</span></li>
+          <li><i>Academic</i><span>GPA 9.6/10, Grade 11 · IELTS 7.0 · SAT 1430</span></li>
+        </ul>
+      </div>
+      <div class="port port--next">
+        <div class="port__yr">2027<small>Next port</small></div>
+        <ul><li><span>A university program in International Business.</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTAINER YARD -->
+<section class="sec" id="yard" style="background:#E3E9EF">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div><span class="idx mono">05 · Cargo manifest</span><h2>Credentials, stacked</h2></div>
+      <p>Honors and scores, loaded and verified with certificates.</p>
+    </div>
+    <div class="yard">
+      <div class="stack" id="stack">
+        <div class="box box--wide" style="--c:var(--orange)"><span class="box__code">NNBU 2026 01 · INDONESIA</span><b>Grand Finalist · IAMO 2026</b><span>International Applied Mathematics Olympiad · Bandung · <a href="https://drive.google.com/drive/folders/1jMRdAuYKw-zOdTcTqEtC3nJ8rAUayPgR?usp=drive_link" target="_blank" rel="noopener">certificate</a></span></div>
+        <div class="box" style="--c:var(--blue)"><span class="box__code">NNBU 2025 02 · HANOI</span><b>Honorable Mention</b><span>Vietnam National University, Hanoi · <a href="https://drive.google.com/file/d/1JAfrwLzsNquccNbp3ZMmUiQuBei7Ot_9/view?usp=drive_link" target="_blank" rel="noopener">certificate</a></span></div>
+        <div class="box" style="--c:var(--teal)"><span class="box__code">NNBU 2023 03 · HANOI</span><b>Second Prize · History</b><span>District Excellent Student · <a href="https://drive.google.com/file/d/1b9XrijfVidqo_X2Lg1Yj2WqxgX0p3iyy/view?usp=drive_link" target="_blank" rel="noopener">certificate</a></span></div>
+        <div class="box" style="--c:var(--navy)"><span class="box__code">TEST · ENGLISH</span><b>IELTS 7.0</b><span>Academic English</span></div>
+        <div class="box" style="--c:var(--red)"><span class="box__code">TEST · COLLEGE</span><b>SAT 1430</b><span>Standardized test</span></div>
+      </div>
+      <div class="crane">
+        <figure class="cert" style="margin:0" data-reveal>
+          <img src="img/iamo-certificate.jpg" alt="IAMO 2026 Grand Finalist certificate" loading="lazy">
+          <figcaption class="mono">Bill of lading · IAMO 2026</figcaption>
+        </figure>
+        <div class="gpa" data-reveal>
+          <span class="mono" style="color:var(--muted)">GPA trend / 10</span>
+          <div class="gpa__bars" id="gpa">
+            <div class="gpa__bar"><b>9.2</b><i data-h="92"></i><span>G9</span></div>
+            <div class="gpa__bar"><b>9.5</b><i data-h="101"></i><span>G10</span></div>
+            <div class="gpa__bar"><b>9.6</b><i data-h="104"></i><span>G11</span></div>
+          </div>
+          <span class="mono" style="color:var(--muted);text-transform:none;letter-spacing:.02em">Bars start at 8.0 to show the change.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ECONOMICS DESK -->
+<section class="sec" id="desk">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <div><span class="idx mono">06 · Economics desk</span><h2>Learning the language of markets</h2></div>
+      <p>How I build the foundation for a business degree outside the classroom.</p>
+    </div>
+    <div class="desk">
+      <article class="fx" data-sym="₫" data-reveal>
+        <span class="mono">2024 – 2025 · Writer</span>
+        <h3>Economic &amp; social issues writing</h3>
+        <p>Researched and wrote about economics, markets, public policy and social issues in Vietnam for the school journalism club.</p>
+      </article>
+      <article class="fx" data-sym="$" data-reveal style="transition-delay:.1s">
+        <span class="mono">2024 – now · Independent</span>
+        <h3>Finance foundations</h3>
+        <p>Self-study of personal finance, budgeting, saving, investing, financial literacy and market fundamentals.</p>
+      </article>
+      <article class="fx" data-sym="%" data-reveal style="transition-delay:.2s">
+        <span class="mono">2026 · Online course</span>
+        <h3>Samsung Solve for Tomorrow</h3>
+        <p>Completed preliminary-round training in STEM innovation, technology and problem-solving.</p>
+        <a href="https://drive.google.com/file/d/18boXtyYSglhoQgagXTkRteNSrD32sFY4/view?usp=drive_link" target="_blank" rel="noopener">Certificate →</a>
+      </article>
+    </div>
+    <div class="skills" data-reveal>
+      <span>Leadership</span><span>Event coordination</span><span>Budgeting</span><span>Market research</span><span>Writing</span><span>Content planning</span><span>Social media</span><span>Basketball</span><span>Drawing &amp; visual art</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="idx mono">07 · Contact</span>
+    <h2>Let’s build something <em>across borders.</em></h2>
+    <div class="contact__row">
+      <a class="email" href="mailto:baonguyenjsc97@gmail.com">baonguyenjsc97@gmail.com</a>
+      <div class="zones">
+        <span>Hanoi<b data-tz="Asia/Ho_Chi_Minh">--:--</b></span>
+        <span>Jakarta<b data-tz="Asia/Jakarta">--:--</b></span>
+        <span>London<b data-tz="Europe/London">--:--</b></span>
+        <span>New York<b data-tz="America/New_York">--:--</b></span>
+      </div>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true"><div>
+    <span>Leadership</span><span>Operations</span><span>Finance</span><span>Social impact</span><span>Markets</span><span>Communities</span><span>Leadership</span><span>Operations</span><span>Finance</span><span>Social impact</span><span>Markets</span><span>Communities</span>
+  </div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Nguyen Ngoc Bao Nguyen</span>
+    <span class="mono">HSSH · Hanoi · Class of 2027</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+</body></html>
